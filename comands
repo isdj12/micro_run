@@ -1,0 +1,2 @@
+esptool --chip esp32 --port COM5 --baud 460800 write-flash 0x1000 firmware.bin
+прошивка

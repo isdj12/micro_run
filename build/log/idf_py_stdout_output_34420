@@ -1,0 +1,77 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\isdj\Desktop\ggg\build\n.elf C:\Users\isdj\Desktop\ggg\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py'
+PI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6448
+load:0x40078000,len:15916
+load:0x�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6448
+load:0x40078000,len:15916
+load:0x40080400,len:3840
+entry 0x40080634
+[0;32mI (27) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Dec  3 2025 20:36:14[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v1.0[0m
+[0;32mI (31) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (68) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (78) boot: Custom bootloader message defined in the KConfig file.[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b430h ( 46128) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=0001b458 vaddr=3ffb0000 size=02540h (  9536) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=0001d9a0 vaddr=40080000 size=02678h (  9848) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=168d0h ( 92368) map[0m
+[0;32mI (150) esp_image: segment 4: paddr=000368f8 vaddr=40082678 size=0b180h ( 45440) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00041a80 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (175) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (175) boot: Disabling RNG early entropy source...[0m
+[0;32mI (187) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (198) app_init: Project name:     n[0m
+[0;32mI (202) app_init: App version:      1[0m
+[0;32mI (207) app_init: Compile time:     Dec  3 2025 20:31:32[0m
+[0;32mI (213) app_init: ELF file SHA256:  c490cebc0...[0m
+[0;32mI (218) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (223) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (228) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (232) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (251) heap_init: At 3FFB2E20 len 0002D1E0 (180 KiB): DRAM[0m
+[0;32mI (257) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (263) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (270) heap_init: At 4008D7F8 len 00012808 (74 KiB): IRAM[0m
+[0;33mW (277) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (290) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;32mI (299) main_task: Started on CPU0[0m
+[0;32mI (309) main_task: Calling app_main()[0m
+[0;32mI (309) STAGE2: Stage2 Bootloader started[0m
+[0;32mI (309) STAGE2: Stage2 Bootloader готов к работе[0m
+[0;32mI (309) STAGE2: GPIO 4 - переключение на ota_0[0m
+[0;32mI (319) STAGE2: GPIO 19 - переключение на ota_1[0m
+[0;31mE (5309) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (5309) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (5309) task_wdt: Tasks currently running:[0m
+[0;31mE (5309) task_wdt: CPU 0: main[0m
+[0;31mE (5309) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (5309) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D9616:0x3FFB1080 0x400D99D8:0x3FFB10A0 0x4008295D:0x3FFB10D0 0x40008544:0x3FFB4080 0x400D63F7:0x3FFB40A0 0x400E60E9:0x3FFB4110 0x40085D51:0x3FFB4140
+
